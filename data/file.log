@@ -3092,3 +3092,5 @@ TypeError: sequence item 1: expected str instance, NoneType found
 2020-04-16 17:04:09.798 | INFO     | handlers.chat_websocket:on_close:80 - on_close client_key: 862c6fb801865dea1364e5d0baa7b8a3
 2020-04-17 15:46:15.979 | INFO     | __main__:main:44 - 启动 tornado
 2020-04-17 15:46:15.981 | INFO     | logging:info:1989 - ready creat index
+2020-04-17 15:56:23.077 | INFO     | __main__:main:44 - 启动 tornado
+2020-04-17 15:56:23.078 | INFO     | logging:info:1989 - ready creat index
