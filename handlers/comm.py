@@ -66,8 +66,8 @@ class MongoHandlerMixin:
         cls.seller_coll.create_index([(CONST.SELLER_ID, 1)], background=True)
 
         cls.buyer_coll.create_index([(CONST.BUYER_ID, 1)], background=True)
-        cls.buyer_coll.create_index([(CONST.SELLER_LIST, 1)], background=True)
-        cls.buyer_coll.create_index([(CONST.BUYER_ID, 1), (CONST.SELLER_LIST, 1)], background=True)
+        cls.buyer_coll.create_index([(CONST.SELLER_ID, 1)], background=True)
+        cls.buyer_coll.create_index([(CONST.BUYER_ID, 1), (CONST.SELLER_ID, 1)], background=True)
 
         cls.chat_msg_record_coll.create_index([(CONST.CHAT_ROOM_KEY, 1), (CONST.ID, -1)], background=True)
 

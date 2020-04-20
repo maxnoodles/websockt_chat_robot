@@ -17,7 +17,7 @@ class ChatListHandler(BaseHandler, MongoHandlerMixin):
         seller_id = self.get_argument(CONST.SELLER_ID, default='')
         keyword = self.get_argument(CONST.KEYWORD, default='')
         filter_dict = {
-            CONST.SELLER_LIST: seller_id
+            CONST.SELLER_ID: seller_id
         }
         if keyword:
             filter_dict['$or'] = [
@@ -26,7 +26,6 @@ class ChatListHandler(BaseHandler, MongoHandlerMixin):
             ]
         projection = {
             CONST.ID: 0,
-            CONST.SELLER_LIST: 0,
         }
         cursor = mongo_op.find(self.buyer_coll, filter_dict, projection=projection)
         count = mongo_op.count_documents(self.buyer_coll, filter_dict)

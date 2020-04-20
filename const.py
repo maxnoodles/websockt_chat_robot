@@ -28,6 +28,7 @@ class __Const:
     SELLER_LIST = 'seller_list'
     EMAIL = 'email'
     NAME = 'name'
+    IS_NEW = 'is_new'
 
     LAST_MSG = 'last_msg'
     MSG_CONTENT = 'msg_content'

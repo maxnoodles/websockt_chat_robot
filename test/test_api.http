@@ -7,14 +7,14 @@ Accept: application/json
 
 ###
 GET http://192.168.0.189:8888/chat_history?seller_id=abc&buyer_id=862c6fb801865dea1364e5d0baa7b8a3
-Accept: application/json
 
 ###
 POST http://192.168.0.189:8888/buyer
 Accept: application/json
 
-{"buyer_id": "dfaesfeasf", "name": "noodles", "email": "noodles@noodles.com"}
-
+{"buyer_id": "ab3074f95927e5981712073c1e7234d7", "name": "noodles", "email": "noodles@noodles.com", "seller_id": "dou_imoosoo_net"}
 
 ###
+GET http://192.168.0.189:8888/buyer?seller_id=dou_imoosoo_net&buyer_id=ab3074f95927e5981712073c1e7234d7
 
+###
