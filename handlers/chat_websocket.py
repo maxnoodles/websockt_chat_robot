@@ -77,19 +77,17 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler, RedisHandlerMixin, M
                 self.greet_by_robot()
                 self.copy_flow_to_status()
                 msg = self.build_msg(self.buyer_id, self.seller_id, 'Get start')
-                # fake_msg = deepcopy(msg)
-                # fake_msg[CONST.MSG_FROM] = ''
-                # self.send_msg(fake_msg)
                 self.check_robot_reply(msg)
         else:
             self.chat_container[self.seller_id].append(self)
 
     def copy_flow_to_status(self, keyword='test'):
         filter_dict = {
-            CONST.SELLER_ID: self.seller_id,
+            # CONST.SELLER_ID: self.seller_id,
             '{}.{}'.format(CONST.KEYWORD_LIST, CONST.KEYWORD): keyword
         }
         flow = mongo_op.find_one(self.auto_flow_coll, filter_dict)
+        logger.info('copy flow_id:{} to buyer_id:{} status'.format(flow[CONST.ID], self.buyer_id))
         if flow:
             flow[CONST.BUYER_ID] = self.buyer_id
             flow[CONST.STATUS] = 'processing'
@@ -132,10 +130,10 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler, RedisHandlerMixin, M
             return
         filter_dict = {
             CONST.BUYER_ID: self.buyer_id,
-            CONST.SELLER_ID: self.seller_id,
+            # CONST.SELLER_ID: self.seller_id,
             CONST.STATUS: 'processing',
         }
-        flow = mongo_op.find_one(self.auto_flow_coll_status, filter_dict)
+        flow = mongo_op.find_one(self.auto_flow_coll_status, filter_dict, sort=[(CONST.ID, -1)])
         if not flow:
             logger.info("Can't find flow")
             return
@@ -150,6 +148,7 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler, RedisHandlerMixin, M
                 if i[CONST.KEYWORD] == keyword:
                     action = action_dict[i['action_id']]
                     break
+            # for...else... 表示 for循环正常执行，没有 Break 才会执行的语句
             else:
                 return
 
@@ -157,10 +156,6 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler, RedisHandlerMixin, M
             # 先判断关键词
             action_data = action['action_data']
             logger.info(action_data)
-            # if action_data.get('is_reply') == 'T':
-            #     if keyword not in [i[CONST.KEYWORD] for i in action_data['short_reply']]:
-            #         if action['action_type'] != 'flow_start':
-            #             break
             if action['action_type'] == 'send_img':
                 robot_msg = self.build_msg(self.seller_id, self.buyer_id, [{"url": action_data['file_url']}], msg_type='image')
                 self.reply_by_robot(robot_msg)

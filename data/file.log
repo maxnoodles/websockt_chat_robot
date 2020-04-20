@@ -3508,3 +3508,149 @@ TypeError: Object of type ObjectId is not JSON serializable
 2020-04-20 10:22:53.034 | INFO     | logging:info:1989 - ready creat index
 2020-04-20 10:22:56.796 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?seller_id=dou_imoosoo_net&buyer_id=ab3074f95927e5981712073c1e7234d7 (192.168.0.189) 4.00ms
 2020-04-20 10:30:32.043 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?seller_id=dou_imoosoo_net&buyer_id=ab3074f95927e5981712073c1e7234d7 (192.168.0.189) 2.00ms
+2020-04-20 10:57:24.351 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?{%22buyer_id%22:%228a0665e7e6ef0a3d0bc0e0317f48c536%22,%22seller_id%22:%22192_168_0_189:8888/buyer%22} (192.168.0.145) 7.98ms
+2020-04-20 10:57:24.360 | WARNING  | tornado.web:log_exception:1786 - 400 GET /buyer?{%22buyer_id%22:%228a0665e7e6ef0a3d0bc0e0317f48c536%22,%22seller_id%22:%22192_168_0_189:8888/buyer%22} (192.168.0.145): Missing argument buyer_id
+2020-04-20 10:57:24.365 | WARNING  | tornado.web:log_request:2250 - 400 GET /buyer?{%22buyer_id%22:%228a0665e7e6ef0a3d0bc0e0317f48c536%22,%22seller_id%22:%22192_168_0_189:8888/buyer%22} (192.168.0.145) 8.99ms
+2020-04-20 10:57:43.462 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 2.00ms
+2020-04-20 10:57:43.465 | WARNING  | tornado.web:log_exception:1786 - 400 GET /buyer (192.168.0.145): Missing argument buyer_id
+2020-04-20 10:57:43.467 | WARNING  | tornado.web:log_request:2250 - 400 GET /buyer (192.168.0.145) 3.00ms
+2020-04-20 10:58:38.171 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 10:58:38.183 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 9.00ms
+2020-04-20 11:00:33.096 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:00:33.100 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:00:44.827 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-20 11:00:44.838 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 6.00ms
+2020-04-20 11:00:54.706 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 2.00ms
+2020-04-20 11:00:54.729 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 18.97ms
+2020-04-20 11:00:54.757 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 21.99ms
+2020-04-20 11:00:54.768 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 10.01ms
+2020-04-20 11:00:54.769 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:00:54.775 | INFO     | handlers.chat_websocket:send_msg:57 - ready send messenger {'send_time': 1587351654.773418, 'msg_from': '192_168_0_189', 'msg_to': '8a0665e7e6ef0a3d0bc0e0317f48c536', 'msg_content': 'hello, can I help you?', 'chat_room_key': '192_168_0_189_8a0665e7e6ef0a3d0bc0e0317f48c536', 'msg_type': 'text', 'name': '192_168_0_189', 'email': '192_168_0_189', 'is_robot': 'T'}
+2020-04-20 11:00:54.779 | INFO     | handlers.chat_websocket:check_robot_reply:130 - ready check_robot_reply, seller_id:192_168_0_189, buyer_id:8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:00:54.781 | INFO     | handlers.chat_websocket:check_robot_reply:140 - Can't find flow
+2020-04-20 11:00:56.827 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:00:57.173 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-20 11:00:57.184 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 7.01ms
+2020-04-20 11:01:03.220 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 0.00ms
+2020-04-20 11:01:03.223 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:02:19.501 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:02:19.512 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 7.01ms
+2020-04-20 11:02:26.123 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:02:26.129 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 4.01ms
+2020-04-20 11:02:36.004 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:02:36.014 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 6.00ms
+2020-04-20 11:02:36.904 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:02:37.539 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:02:37.549 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 6.98ms
+2020-04-20 11:02:38.147 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:02:38.154 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 4.01ms
+2020-04-20 11:02:45.977 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:02:45.982 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-20 11:03:12.988 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:03:12.994 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 4.00ms
+2020-04-20 11:03:21.765 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:03:21.775 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 7.00ms
+2020-04-20 11:03:25.761 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 3.00ms
+2020-04-20 11:03:25.772 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 5.98ms
+2020-04-20 11:03:25.812 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 33.98ms
+2020-04-20 11:03:25.814 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 32.98ms
+2020-04-20 11:03:25.815 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:04:17.767 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:04:17.804 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 3.00ms
+2020-04-20 11:04:17.815 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 7.00ms
+2020-04-20 11:04:17.832 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 8.99ms
+2020-04-20 11:04:17.834 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 7.99ms
+2020-04-20 11:04:17.835 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:04:19.169 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:04:19.517 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-20 11:04:19.527 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 5.98ms
+2020-04-20 11:04:20.425 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:04:20.435 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 7.00ms
+2020-04-20 11:04:23.221 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 1.00ms
+2020-04-20 11:04:23.225 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 2.00ms
+2020-04-20 11:04:23.233 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 3.01ms
+2020-04-20 11:04:23.235 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 1.00ms
+2020-04-20 11:04:23.236 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:04:25.451 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:04:25.791 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:04:25.795 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-20 11:04:26.964 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.01ms
+2020-04-20 11:04:26.969 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.99ms
+2020-04-20 11:04:31.789 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:04:31.793 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:04:33.412 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 2.00ms
+2020-04-20 11:04:33.423 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 5.98ms
+2020-04-20 11:04:33.442 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 11.99ms
+2020-04-20 11:04:33.445 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 12.98ms
+2020-04-20 11:04:33.447 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:04:35.184 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:04:35.519 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:04:35.524 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.01ms
+2020-04-20 11:05:01.507 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:05:01.510 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:05:02.845 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 2.00ms
+2020-04-20 11:05:02.855 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 6.00ms
+2020-04-20 11:05:02.868 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 8.00ms
+2020-04-20 11:05:02.871 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 8.00ms
+2020-04-20 11:05:02.872 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:05:04.622 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:05:04.947 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:05:04.957 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 6.00ms
+2020-04-20 11:05:13.908 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 0.00ms
+2020-04-20 11:05:13.912 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:05:54.138 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.01ms
+2020-04-20 11:05:54.144 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 4.00ms
+2020-04-20 11:07:35.124 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:07:35.128 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.99ms
+2020-04-20 11:07:39.075 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.97ms
+2020-04-20 11:07:39.081 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.99ms
+2020-04-20 11:07:40.342 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 0.00ms
+2020-04-20 11:07:40.346 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 3.00ms
+2020-04-20 11:07:40.356 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 4.01ms
+2020-04-20 11:07:40.360 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 2.00ms
+2020-04-20 11:07:40.360 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:09:18.618 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:09:18.658 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 2.00ms
+2020-04-20 11:09:18.663 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 3.00ms
+2020-04-20 11:09:18.673 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 5.00ms
+2020-04-20 11:09:18.678 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 1.00ms
+2020-04-20 11:09:18.678 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:09:19.621 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:09:19.994 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:09:20.002 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.99ms
+2020-04-20 11:09:20.825 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 0.72ms
+2020-04-20 11:09:20.830 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.98ms
+2020-04-20 11:09:22.828 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 1.00ms
+2020-04-20 11:09:22.835 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 4.01ms
+2020-04-20 11:09:22.844 | INFO     | tornado.web:log_request:2250 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 4.00ms
+2020-04-20 11:09:22.848 | INFO     | tornado.web:log_request:2250 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 (192.168.0.145) 1.99ms
+2020-04-20 11:09:22.849 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536 coming
+2020-04-20 11:09:27.829 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: 8a0665e7e6ef0a3d0bc0e0317f48c536
+2020-04-20 11:09:28.208 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:09:28.214 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.99ms
+2020-04-20 11:18:08.821 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 0.98ms
+2020-04-20 11:18:08.825 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:19:51.028 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:19:51.032 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:20:31.381 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:20:31.388 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.99ms
+2020-04-20 11:21:25.153 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:21:25.160 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-20 11:21:46.793 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 11:21:46.799 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.16ms
+2020-04-20 14:15:55.361 | INFO     | __main__:main:44 - 启动 tornado
+2020-04-20 14:15:55.362 | INFO     | logging:info:1378 - ready creat index
+2020-04-20 14:53:43.410 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.189) 12.99ms
+2020-04-20 14:53:48.851 | INFO     | logging:info:1378 - 200 GET /buyer?seller_id=dou_imoosoo_net&buyer_id=ab3074f95927e5981712073c1e7234d7 (192.168.0.189) 4.00ms
+2020-04-20 14:53:57.846 | INFO     | logging:info:1378 - 200 GET /buyer?seller_id=dou_imoosoo&buyer_id=ab3074f95927e5981712073c1e7234d7 (192.168.0.189) 2.00ms
+2020-04-20 14:54:05.735 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.189) 4.01ms
+2020-04-20 17:27:22.846 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.01ms
+2020-04-20 17:27:22.853 | INFO     | logging:info:1378 - 304 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 4.00ms
+2020-04-20 17:27:29.816 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.99ms
+2020-04-20 17:27:29.823 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 4.99ms
+2020-04-20 17:27:41.424 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 1.01ms
+2020-04-20 17:27:41.431 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 4.00ms
+2020-04-20 17:28:49.731 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 17:28:49.736 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-20 17:29:16.157 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-20 17:29:16.161 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.99ms

@@ -4,6 +4,7 @@
 # Author: chenjiaxin
 # Date: 2020-04-13
 import tornado.escape
+from loguru import logger
 
 from const import CONST
 from handlers.comm import MongoHandlerMixin, BaseHandler
@@ -19,17 +20,26 @@ class BuyerHandler(BaseHandler, MongoHandlerMixin):
 
     def post(self):
         json_data = self.request.body.decode('utf8')
-        data = tornado.escape.json_decode(json_data)
-        buyer_id = data.get(CONST.BUYER_ID)
-        seller_id = data.get(CONST.SELLER_ID)
+        try:
+            data = tornado.escape.json_decode(json_data)
+        except Exception as e:
+            logger.error('data:{} is not a json'.format(json_data))
+            return self.fail(reason='data is not a json')
 
+        buyer_id = data.get(CONST.BUYER_ID, '')
+        seller_id = data.get(CONST.SELLER_ID, '')
+        name = data.get(CONST.NAME, '')
+        email = data.get(CONST.EMAIL, '')
+
+        if not all([buyer_id, seller_id, name, email]):
+            return self.fail(reason='params error')
         buyer = self.get_buyer(buyer_id, seller_id)
         if not buyer:
             new_buyer = {
                 CONST.BUYER_ID: buyer_id,
                 CONST.SELLER_ID: seller_id,
-                CONST.NAME: data.get(CONST.NAME, ''),
-                CONST.EMAIL: data.get(CONST.EMAIL, '')
+                CONST.NAME: name,
+                CONST.EMAIL: email
             }
             mongo_op.insert_one(self.buyer_coll, new_buyer)
         self.success()

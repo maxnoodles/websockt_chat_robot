@@ -12,9 +12,9 @@ GET http://192.168.0.189:8888/chat_history?seller_id=abc&buyer_id=862c6fb801865d
 POST http://192.168.0.189:8888/buyer
 Accept: application/json
 
-{"buyer_id": "ab3074f95927e5981712073c1e7234d7", "name": "noodles", "email": "noodles@noodles.com", "seller_id": "dou_imoosoo_net"}
+{"buyer_id": "ab3074f95927e5981712073c1e7234d7", "name": "noodles", "email": "noodles@noodles.com", "seller_id": "dou_imoosoo"}
 
 ###
-GET http://192.168.0.189:8888/buyer?seller_id=dou_imoosoo_net&buyer_id=ab3074f95927e5981712073c1e7234d7
+GET http://192.168.0.189:8888/buyer?seller_id=dou_imoosoo&buyer_id=ab3074f95927e5981712073c1e7234d7
 
 ###
