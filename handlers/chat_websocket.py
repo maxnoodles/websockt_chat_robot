@@ -39,7 +39,20 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler, RedisHandlerMixin, M
         return True if not result else False
 
     def greet_by_robot(self):
-        msg = self.build_msg(self.seller_id, self.buyer_id, 'hello, can I help you?')
+        say_hello_content = """Thanks for your message. We're away and can't respond right now. Please follow our FACEBOOK page or message us
+        
+Page: https://www.facebook.com/quanwby.cc
+
+Messenger us: https://m.me/quanwby.cc"""
+
+        self.robot_build_msg_and_send(say_hello_content)
+
+    @staticmethod
+    def build_img_content(url):
+        return [{"url": url}]
+
+    def robot_build_msg_and_send(self, content, **kwargs):
+        msg = self.build_msg(self.seller_id, self.buyer_id, content, **kwargs)
         self.reply_by_robot(msg)
 
     def reply_by_robot(self, msg):
@@ -75,9 +88,9 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler, RedisHandlerMixin, M
             if is_new:
                 # 拷贝机器人
                 self.greet_by_robot()
-                self.copy_flow_to_status()
-                msg = self.build_msg(self.buyer_id, self.seller_id, 'Get start')
-                self.check_robot_reply(msg)
+        #         self.copy_flow_to_status()
+        #         msg = self.build_msg(self.buyer_id, self.seller_id, 'Get start')
+        #         self.check_robot_reply(msg)
         else:
             self.chat_container[self.seller_id].append(self)
 
@@ -199,6 +212,11 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler, RedisHandlerMixin, M
         # 根据发送人获取姓名和邮箱
         chat_room_key = self.get_chat_room_key(seller_id, buyer_id)
         msg_from_info = self.get_msg_from_info(msg_from)
+
+        if msg_content and isinstance(msg_content, list):
+            if isinstance(msg_content[0], dict):
+                if 'url' in msg_content[0].keys():
+                    msg_type = 'image'
 
         msg = {
             CONST.SEND_TIME: time.time(),

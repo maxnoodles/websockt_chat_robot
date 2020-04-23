@@ -3654,3 +3654,83 @@ TypeError: Object of type ObjectId is not JSON serializable
 2020-04-20 17:28:49.736 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
 2020-04-20 17:29:16.157 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
 2020-04-20 17:29:16.161 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.99ms
+2020-04-21 17:47:59.721 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 36.99ms
+2020-04-21 17:47:59.734 | INFO     | logging:info:1378 - 304 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 8.00ms
+2020-04-21 17:48:05.172 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-21 17:48:05.178 | INFO     | logging:info:1378 - 304 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-21 17:48:54.171 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-21 17:48:54.177 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-21 17:49:18.260 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.97ms
+2020-04-21 17:49:18.265 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 2.99ms
+2020-04-21 17:50:50.026 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.01ms
+2020-04-21 17:50:50.031 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 17:50:59.511 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-21 17:50:59.516 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 2.01ms
+2020-04-21 17:52:42.944 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-21 17:52:42.955 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 6.98ms
+2020-04-21 19:08:27.083 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8ace8555da92e6d58f4bedf2876c63c3&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-21 19:08:27.091 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=8ace8555da92e6d58f4bedf2876c63c3&seller_id=192_168_0_189 (192.168.0.145) 5.00ms
+2020-04-21 19:13:39.667 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 19:26:44.310 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-21 19:26:44.317 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.99ms
+2020-04-21 19:27:55.797 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 19:27:55.807 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 4.00ms
+2020-04-21 19:28:00.540 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-21 19:28:00.545 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 3.00ms
+2020-04-21 19:28:53.469 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 0.98ms
+2020-04-21 19:28:53.473 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 1.99ms
+2020-04-21 19:29:09.787 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 19:29:09.798 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 6.98ms
+2020-04-21 19:29:28.012 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 19:29:28.024 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 7.01ms
+2020-04-21 19:29:29.616 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 2.00ms
+2020-04-21 19:29:29.651 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 32.98ms
+2020-04-21 19:29:44.467 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 19:29:44.476 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=8a0665e7e6ef0a3d0bc0e0317f48c536&seller_id=192_168_0_189 (192.168.0.145) 6.00ms
+2020-04-21 19:29:45.063 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 1.00ms
+2020-04-21 19:29:45.069 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 2.99ms
+2020-04-21 19:30:49.980 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 2.98ms
+2020-04-21 19:30:49.994 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 7.98ms
+2020-04-21 19:30:50.498 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 1.00ms
+2020-04-21 19:30:50.510 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 1.98ms
+2020-04-21 19:30:55.643 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 1.00ms
+2020-04-21 19:30:55.648 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 4.01ms
+2020-04-21 19:30:56.675 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 2.00ms
+2020-04-21 19:30:56.684 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 5.01ms
+2020-04-21 19:31:40.699 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 0.99ms
+2020-04-21 19:31:40.703 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 2.01ms
+2020-04-21 19:32:12.910 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-21 19:32:12.914 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 19:32:13.295 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 2.01ms
+2020-04-21 19:32:13.301 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 2.99ms
+2020-04-21 19:34:32.399 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.99ms
+2020-04-21 19:34:32.407 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 5.01ms
+2020-04-21 19:35:20.023 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-21 19:35:20.028 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 19:35:38.366 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 1.02ms
+2020-04-21 19:35:38.369 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 1.99ms
+2020-04-21 19:35:45.668 | INFO     | logging:info:1378 - 200 GET /chat_history?seller_id=192_168_0_189&buyer_id=ec315f75214d75282634cb8674e16645 (192.168.0.145) 66.96ms
+2020-04-21 19:35:45.728 | INFO     | logging:info:1378 - 101 GET /chatsocket?seller_id=192_168_0_189&buyer_id=ec315f75214d75282634cb8674e16645 (192.168.0.145) 57.97ms
+2020-04-21 19:35:45.732 | INFO     | handlers.chat_websocket:open:71 - new websocket uri:/chatsocket?seller_id=192_168_0_189&buyer_id=ec315f75214d75282634cb8674e16645 coming
+2020-04-21 19:35:45.756 | INFO     | handlers.chat_websocket:send_msg:57 - ready send messenger {'send_time': 1587468945.7398126, 'msg_from': '192_168_0_189', 'msg_to': 'ec315f75214d75282634cb8674e16645', 'msg_content': 'hello, can I help you?', 'chat_room_key': '192_168_0_189_ec315f75214d75282634cb8674e16645', 'msg_type': 'text', 'name': '192_168_0_189', 'email': '192_168_0_189', 'is_robot': 'T'}
+2020-04-21 19:35:45.767 | INFO     | handlers.chat_websocket:check_robot_reply:130 - ready check_robot_reply, seller_id:192_168_0_189, buyer_id:ec315f75214d75282634cb8674e16645
+2020-04-21 19:35:45.769 | INFO     | handlers.chat_websocket:check_robot_reply:140 - Can't find flow
+2020-04-21 19:35:47.091 | INFO     | handlers.chat_websocket:on_close:107 - on_close client_key: ec315f75214d75282634cb8674e16645
+2020-04-21 19:35:47.660 | INFO     | logging:info:1378 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 2.00ms
+2020-04-21 19:35:47.675 | INFO     | logging:info:1378 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 10.98ms
+2020-04-21 19:35:48.621 | INFO     | logging:info:1378 - 200 OPTIONS /buyer (192.168.0.145) 2.00ms
+2020-04-21 19:35:48.629 | INFO     | logging:info:1378 - 200 POST /buyer (192.168.0.145) 5.00ms
+2020-04-22 10:44:59.094 | INFO     | __main__:main:44 - 启动 tornado
+2020-04-22 10:44:59.095 | INFO     | logging:info:1989 - ready creat index
+2020-04-22 11:55:38.299 | INFO     | __main__:main:55 - 启动 tornado
+2020-04-22 11:55:38.299 | INFO     | logging:info:1989 - ready creat index
+2020-04-22 11:55:50.840 | INFO     | __main__:main:57 - 启动 tornado
+2020-04-22 11:55:50.840 | INFO     | logging:info:1989 - ready creat index
+2020-04-23 09:50:47.301 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=a3cdcaf2ff8ff12f527a6a3645b6540d&seller_id=192_168_0_189 (192.168.0.145) 22.99ms
+2020-04-23 09:50:47.344 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=a3cdcaf2ff8ff12f527a6a3645b6540d&seller_id=192_168_0_189 (192.168.0.145) 40.99ms
+2020-04-23 09:50:50.702 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 1.00ms
+2020-04-23 09:50:50.709 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 5.00ms
+2020-04-23 09:51:12.815 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 1.00ms
+2020-04-23 09:51:12.824 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 4.00ms
+2020-04-23 09:51:14.417 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 0.00ms
+2020-04-23 09:51:14.419 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 0.98ms
