@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 #
-# Copyright: yiguotech.com
 # Author: chenjiaxin
 # Date: 2020-04-13
 import time
@@ -39,11 +38,13 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler, RedisHandlerMixin, M
         return True if not result else False
 
     def greet_by_robot(self):
-        say_hello_content = """Thanks for your message. We're away and can't respond right now. Please follow our FACEBOOK page or message us
-        
-Page: https://www.facebook.com/quanwby.cc
+        say_hello_content = """Thanks for your message. 
 
-Messenger us: https://m.me/quanwby.cc"""
+We're running this activity to spread the word about our best products. Promotions like this help us get the word out and increase our products' popularity on Amazon.
+
+Once your order is shipped, you'll get 50% rebate. When your review is alive, you'll get the left 50%.
+
+Please leave your contact such as e-mail address to us for more detail information."""
 
         self.robot_build_msg_and_send(say_hello_content)
 
@@ -87,10 +88,10 @@ Messenger us: https://m.me/quanwby.cc"""
             is_new = self.is_new_user(self.seller_id, self.buyer_id)
             if is_new:
                 # 拷贝机器人
-                self.greet_by_robot()
-        #         self.copy_flow_to_status()
-        #         msg = self.build_msg(self.buyer_id, self.seller_id, 'Get start')
-        #         self.check_robot_reply(msg)
+                # self.greet_by_robot()
+                self.copy_flow_to_status()
+                msg = self.build_msg(self.buyer_id, self.seller_id, 'test')
+                self.check_robot_reply(msg)
         else:
             self.chat_container[self.seller_id].append(self)
 
@@ -154,16 +155,16 @@ Messenger us: https://m.me/quanwby.cc"""
         action_dict = flow[CONST.ACTION_LIST]
         action = action_dict[flow['current_action_id']]
         action_data = action['action_data']
-
+        action = action_dict[action['next_id_list'][0]]
         # 判断关键词
-        if action_data.get('is_reply') == 'T':
-            for i in action_data.get('short_reply', []):
-                if i[CONST.KEYWORD] == keyword:
-                    action = action_dict[i['action_id']]
-                    break
-            # for...else... 表示 for循环正常执行，没有 Break 才会执行的语句
-            else:
-                return
+        # if action_data.get('is_reply') == 'T':
+        #     for i in action_data.get('short_reply', []):
+        #         if i[CONST.KEYWORD] == keyword:
+        #             action = action_dict[i['action_id']]
+        #             break
+        #     # for...else... 表示 for循环正常执行，没有 Break 才会执行的语句
+        #     else:
+        #         return
 
         while True:
             # 先判断关键词
