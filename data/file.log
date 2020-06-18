@@ -3734,3 +3734,7 @@ TypeError: Object of type ObjectId is not JSON serializable
 2020-04-23 09:51:12.824 | INFO     | tornado.web:log_request:2250 - 200 GET /buyer?buyer_id=ec315f75214d75282634cb8674e16645&seller_id=192_168_0_189 (192.168.0.145) 4.00ms
 2020-04-23 09:51:14.417 | INFO     | tornado.web:log_request:2250 - 200 OPTIONS /buyer (192.168.0.145) 0.00ms
 2020-04-23 09:51:14.419 | INFO     | tornado.web:log_request:2250 - 200 POST /buyer (192.168.0.145) 0.98ms
+2020-04-23 14:34:11.491 | INFO     | __main__:main:54 - 启动 tornado
+2020-04-23 14:34:11.492 | INFO     | logging:info:1989 - ready creat index
+2020-04-23 17:39:03.775 | INFO     | __main__:main:54 - 启动 tornado
+2020-04-23 17:39:03.776 | INFO     | logging:info:1989 - ready creat index
